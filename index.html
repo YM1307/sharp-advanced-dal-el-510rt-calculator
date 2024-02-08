@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <fieldset class="Calculator">
+
+        <textarea class="SecondFunction" name="SecondFunction" id="SecondFunction" cols="3" rows="1"></textarea>
+
+        <textarea class="Screen" name="Screen" id="Screen" cols="15" rows="1"></textarea>
+    
+    <div class="Complexe_Functions">
+        <!--First row of functions-->
+        <div class="grid-item" onclick="SecondF()">
+            <button class="SecondF">2ndF</button>
+        </div>
+
+        <div class="grid-item" onclick="Trig_Mode()">
+            <p>MODE</p>
+            <button class="white_button">DRG</button>
+        </div>
+
+        <div class="grid-item" onclick="GoBack()">
+            <p>FSE</p>
+            <button class="white_button">ᐊ</button>
+        </div>
+
+        <div class="grid-item" onclick="GoForward()">
+            <p>TAB</p>
+            <button class="white_button">ᐅ</button>
+        </div>
+
+        <div class="grid-item" onclick="Delete()">
+            <p>CA</p>
+            <button class="white_button">DEL</button>
+        </div>
+
+        <div class="grid-item" onclick="ON_Clear()">
+            <p>OFF</p>
+            <button class="white_button">ON/C</button>
+        </div>
+
+
+        <!--Second row of functions-->
+        <div class="grid-item" onclick="hyp()">
+            <p>arc hyp</p>
+            <button class="white_button">hyp</button>
+        </div>
+
+        <div class="grid-item" onclick="sin()">
+            <p>sin<sup>-1</sup></p>
+            <button class="white_button">sin</button>
+        </div>
+
+        <div class="grid-item" onclick="cos()">
+            <p>cos<sup>-1</sup></p>
+            <button class="white_button">cos</button>
+        </div>
+
+        <div class="grid-item" onclick="tan()">
+            <p>tan<sup>-1</sup></p>
+            <button class="white_button">tan</button>
+        </div>
+
+        <div class="grid-item" onclick="PI()">
+            <p>√</p>
+            <button class="white_button">π</button>
+        </div>
+
+        <div class="grid-item" onclick="y_pow_x()">
+            <p><sup>x</sup>√ </p>
+            <button class="white_button">y<sup>x</sup></button>
+        </div>
+
+
+        <!--Third row of functions-->
+        <div class="grid-item" onclick="Exp()">
+            <p>x<sup>2</sup></p>
+            <button class="white_button"> <strong>E</strong>xp</button>
+        </div>
+
+        <div class="grid-item" onclick="Fractional_number()">
+            <p>d/c</p>
+            <button class="white_button">a,b,c</button>
+        </div>
+
+        <div class="grid-item" onclick="DMS()">
+            <p>⟷DEG</p>
+            <button class="white_button">D°M'S</button>
+        </div>
+
+        <div class="grid-item" onclick="Memory_Recal()">
+            <p>ALPHA</p>
+            <button class="white_button">RCL</button>
+        </div>
+
+        <div class="grid-item" onclick="Memory_Store()">
+            <p>,</p>
+            <button class="white_button">STO</button>
+        </div>
+
+        <div class="grid-item" onclick="Memory_Plus()">
+            <p>M-</p>
+            <button class="white_button">M+</button>
+        </div>
+        
+    </div>
+    
+    
+    <div class="Basic_Functions">
+        
+        <!--First row of numbers-->
+        <div class="grid-item" onclick="seven()">
+            <p>RANDOM</p>
+            <button id="btn7">7</button>
+        </div>
+
+        <div class="grid-item" onclick="eight()">
+            <p class="center_p">→rθ</p>
+            <button id="btn8">8</button>
+        </div>
+
+        <div class="grid-item" onclick="nine()">
+            <p class="center_p">→xy</p>
+            <button id="btn9">9</button>
+        </div>
+
+        <div class="grid-item" onclick="Left_parentheses()">
+            <p class="center_p">x<sup>-1</sup></p>
+            <button>(</button>
+        </div>
+
+        <div class="grid-item" onclick="Right_parentheses()">
+            <h4 class="center_p"><p>x<sup>3</sup></p></h4>
+            <button>)</button>
+        </div>
+
+
+        <!--Second row of numbers-->
+        <div class="grid-item" onclick="four()">
+            <p class="center_p">n!</p>
+            <button id="btn4">4</button>
+        </div>
+
+        <div class="grid-item" onclick="five()">
+            <p class="center_p">nCr</p>
+            <button id="btn5">5</button>
+        </div>
+
+        <div class="grid-item" onclick="six()">
+            <p class="center_p">nPr</p>
+            <button id="btn6">6</button>
+        </div>
+
+        <div class="grid-item" onclick="Multiply()">
+            <p class="center_p">GCD</p>
+            <button>x</button>
+        </div>
+
+        <div class="grid-item" onclick="Divide()">
+            <p class="center_p">LCM</p>
+            <button>÷</button>
+        </div>
+
+
+        <!--Third row of numbers-->
+        <div class="grid-item" onclick="one()">
+            <p class="center_p">log</p>
+            <button id="btn1">1</button>
+        </div>
+
+        <div class="grid-item" onclick="two()">
+            <p class="center_p">ln</p>
+            <button id="btn2">2</button>
+        </div>
+
+        <div class="grid-item" onclick="three()">
+            <p class="center_p">DRG></p>
+            <button id="btn3">3</button>
+        </div>
+
+        <div class="grid-item" onclick="Plus()">
+            <button class="Plus">+</button>
+        </div>
+
+        <div class="grid-item" onclick="Minus()">
+            <button class="Minus">-</button>
+        </div>
+        
+
+        <!--Last row of numbers/functions-->
+        <div class="grid-item" onclick="zero()">
+            <h4 class="center_p"><p>10<sup>x</sup></p></h4>
+            <button id="btn0">0</button>
+        </div>
+        
+        <div class="grid-item" onclick="Decimal()">
+            <h4 class="center_p"><p>e<sup>3</sup></p></h4>
+            <button>.</button>
+        </div>
+
+        <div class="grid-item" onclick="Plus_Minus()">
+            <h4 class="center_p"><p><sup>3</sup>√</p></h4>
+            <button>( - )</button>
+        </div>
+
+        <div class="grid-item" onclick="Answer()">
+            <p class="center_p">←,→</p>
+            <button>ANS</button>
+        </div>
+        
+        <div class="grid-item" onclick="Equals()">
+            <p class="center_p">%</p>
+            <button>=</button>
+        </div>
+    </div>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body
+    {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+.Calculator
+    {
+        margin-inline-start: 30%;
+        margin-inline-end: 70%;
+    }
+
+.Basic_Functions
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /*Determines the max amount of columns */
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px; /* The distance between each item in the container */
+        margin-inline-start: 4%;
+    }
+
+.Complexe_Functions
+    {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /*Determines the max amount of columns */
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px; /* The distance between each item in the container */
+        margin-inline-start: 2%;
+    }
+
+.center_p
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 25px;
+    }
+h4
+    {
+        font-size: 0px;
+        margin-top: -4px;
+    }
+
+.Memory /*The fieldset around RCL, STO and M+*/
+    {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-left: 0px;
+        margin-right: -500px;
+        gap: 15px;
+        width: -100px;
+        margin-top: -5px;
+        margin-inline-start: 5%;
+        margin-inline-end: 95%;
+    }
+
+button
+    {
+        background-color: #2e2e2e;
+        color: white;
+        border: none black;
+        padding: 10px 20px; /* Changes the width of the circle vertically and horizentally respectfully*/ 
+        border-radius: 20%; /*Determines how round the edges are*/
+        font-size: 18px;
+        cursor:pointer;
+        width: 75px;
+        height: 75px;
+    }
+
+.white_button, .SecondF
+    {
+        background-color: rgb(218, 218, 218);
+        color:  #2e2e2e;
+        width: 75px;
+        height: 45px;
+    }
+
+.SecondF
+    {
+        border-top: 10px rgb(255, 164, 28);
+        color: rgb(255, 164, 28);
+        margin-top: 46px;
+    }
+
+p
+    {
+        color: rgb(255, 164, 28);
+        font-size: 15px;
+        text-align: center;
+    }
+
+.Plus,.Minus
+    {
+        margin-top: 48px;
+    }
+
+.Screen
+    {
+        text-align: right;
+        margin-top: 20px;
+        font-size: 500%;
+        background-color: rgb(98, 160, 37);
+    }
+
+.SecondFunction
+    {
+        width: 50px;
+        height: 10px;
+    }
+
+fieldset
+    {
+        border-radius: 2.5%;
+    }
