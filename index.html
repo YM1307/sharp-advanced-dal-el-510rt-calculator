@@ -54,41 +54,41 @@
             <button class="white_button">hyp</button>
         </div>
 
-        <div class="grid-item" onclick="sin()">
+        <div class="grid-item" onclick="add_to_equation('Math.sin', 'trig')">
             <p>sin<sup>-1</sup></p>
-            <button class="white_button">sin</button>
+            <button id= "trig" class="white_button">sin</button>
         </div>
 
-        <div class="grid-item" onclick="cos()">
+        <div class="grid-item" onclick="add_to_equation('Math.cos', 'trig')">
             <p>cos<sup>-1</sup></p>
             <button class="white_button">cos</button>
         </div>
 
-        <div class="grid-item" onclick="tan()">
+        <div class="grid-item" onclick="add_to_equation('Math.tan', 'trig')">
             <p>tan<sup>-1</sup></p>
             <button class="white_button">tan</button>
         </div>
 
-        <div class="grid-item" onclick="PI()">
+        <div class="grid-item" onclick="add_to_equation('Math.PI')">
             <p>√</p>
             <button class="white_button">π</button>
         </div>
 
-        <div class="grid-item" onclick="y_pow_x()">
+        <div class="grid-item" onclick="add_to_equation('**')">
             <p><sup>x</sup>√ </p>
             <button class="white_button">y<sup>x</sup></button>
         </div>
 
 
         <!--Third row of functions-->
-        <div class="grid-item" onclick="Exp()">
+        <div class="grid-item" onclick="add_to_equation('*10**')">
             <p>x<sup>2</sup></p>
             <button class="white_button"> <strong>E</strong>xp</button>
         </div>
 
         <div class="grid-item" onclick="Fractional_number()">
             <p>d/c</p>
-            <button class="white_button">a,b,c</button>
+            <button class="white_button"><strong>a</strong><sup>b</sup>/<sub>c</sub></button>
         </div>
 
         <div class="grid-item" onclick="DMS()">
@@ -117,19 +117,19 @@
     <div class="Basic_Functions">
         
         <!--First row of numbers-->
-        <div class="grid-item" onclick="seven()">
+        <div class="grid-item" onclick="add_to_equation(7)">
             <p>RANDOM</p>
-            <button id="btn7">7</button>
+            <button id="7">7</button>
         </div>
 
-        <div class="grid-item" onclick="eight()">
+        <div class="grid-item" onclick="add_to_equation(8)">
             <p class="center_p">→rθ</p>
-            <button id="btn8">8</button>
+            <button id="8">8</button>
         </div>
 
-        <div class="grid-item" onclick="nine()">
+        <div class="grid-item" onclick="add_to_equation(9)">
             <p class="center_p">→xy</p>
-            <button id="btn9">9</button>
+            <button id="9">9</button>
         </div>
 
         <div class="grid-item" onclick="Left_parentheses()">
@@ -144,69 +144,69 @@
 
 
         <!--Second row of numbers-->
-        <div class="grid-item" onclick="four()">
+        <div class="grid-item" onclick="add_to_equation(4)">
             <p class="center_p">n!</p>
-            <button id="btn4">4</button>
+            <button id="4">4</button>
         </div>
 
-        <div class="grid-item" onclick="five()">
+        <div class="grid-item" onclick="add_to_equation(5)">
             <p class="center_p">nCr</p>
-            <button id="btn5">5</button>
+            <button id="5">5</button>
         </div>
 
-        <div class="grid-item" onclick="six()">
+        <div class="grid-item" onclick="add_to_equation(6)">
             <p class="center_p">nPr</p>
-            <button id="btn6">6</button>
+            <button id="6">6</button>
         </div>
 
-        <div class="grid-item" onclick="Multiply()">
+        <div class="grid-item" onclick="add_to_equation('*')">
             <p class="center_p">GCD</p>
-            <button>x</button>
+            <button id="*">x</button>
         </div>
 
-        <div class="grid-item" onclick="Divide()">
+        <div class="grid-item" onclick="add_to_equation('/')">
             <p class="center_p">LCM</p>
-            <button>÷</button>
+            <button id="/">÷</button>
         </div>
 
 
         <!--Third row of numbers-->
-        <div class="grid-item" onclick="one()">
+        <div class="grid-item" onclick="add_to_equation(1)">
             <p class="center_p">log</p>
-            <button id="btn1">1</button>
+            <button id="1">1</button>
         </div>
 
-        <div class="grid-item" onclick="two()">
+        <div class="grid-item" onclick="add_to_equation(2)">
             <p class="center_p">ln</p>
-            <button id="btn2">2</button>
+            <button id="2">2</button>
         </div>
 
-        <div class="grid-item" onclick="three()">
+        <div class="grid-item" onclick="add_to_equation(3)">
             <p class="center_p">DRG></p>
-            <button id="btn3">3</button>
+            <button id="3">3</button>
         </div>
 
-        <div class="grid-item" onclick="Plus()">
-            <button class="Plus">+</button>
+        <div class="grid-item" onclick="add_to_equation('+')">
+            <button id="+" class="Plus">+</button>
         </div>
 
-        <div class="grid-item" onclick="Minus()">
-            <button class="Minus">-</button>
+        <div class="grid-item" onclick="add_to_equation('-')">
+            <button id="-" class="Minus">-</button>
         </div>
         
 
         <!--Last row of numbers/functions-->
-        <div class="grid-item" onclick="zero()">
+        <div class="grid-item" onclick="add_to_equation(0)">
             <h4 class="center_p"><p>10<sup>x</sup></p></h4>
-            <button id="btn0">0</button>
+            <button id="0">0</button>
         </div>
         
-        <div class="grid-item" onclick="Decimal()">
+        <div class="grid-item" onclick="add_to_equation('.')">
             <h4 class="center_p"><p>e<sup>3</sup></p></h4>
             <button>.</button>
         </div>
 
-        <div class="grid-item" onclick="Plus_Minus()">
+        <div class="grid-item" onclick="add_to_equation('+/-')">
             <h4 class="center_p"><p><sup>3</sup>√</p></h4>
             <button>( - )</button>
         </div>
